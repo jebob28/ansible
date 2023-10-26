@@ -4,9 +4,6 @@
   gather_facts: false
 
   tasks:
-    - name: Importar dependências do GitHub
-      win_shell: git clone https://github.com/jebob28/PY_RPA.git
-        chdir: C:\Users\CAISP\Documents\PY_RPA-main\PY_RPA-main
 
     - name: Criar ambiente virtual
       win_shell: python -m venv venv
