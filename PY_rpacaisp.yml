@@ -8,20 +8,20 @@
     - name: Criar ambiente virtual
       win_shell: python -m venv venv
       args:
-        chdir: C:\Users\administrador\Documents\PY_RPA-main\PY_RPA-main
+        chdir: C:\Users\bootcaisp\Documents\PY_RPA-main\PY_RPA-main
 
     - name: Ativar ambiente virtual
       win_shell: .\\venv\\Scripts\\activate
       args:
-        chdir: C:\Users\administrador\Documents\PY_RPA-main\PY_RPA-main
+        chdir: C:\Users\bootcaisp\Documents\PY_RPA-main\PY_RPA-main
 
     - name: Instalar dependências
       win_shell: pip install -r requirements.txt
 
       args:
-        chdir: C:\Users\administrador\Documents\PY_RPA-main\PY_RPA-main
+        chdir: C:\Users\bootcaisp\Documents\PY_RPA-main\PY_RPA-main
 
     - name: Executar script
       win_shell: python bot.py
       args:
-        chdir: C:\Users\administrador\Documents\PY_RPA-main\PY_RPA-main
+        chdir: C:\Users\bootcaisp\Documents\PY_RPA-main\PY_RPA-main
